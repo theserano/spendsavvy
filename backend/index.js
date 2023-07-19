@@ -93,6 +93,7 @@ app.post("/login", async (req, res) => {
 app.post("/signup", async (req, res) => {
   // const {firstName, lastName, email, password} = req.body;
   const person = req.body;
+  console.log(person);
 
   try {
     const check = await user.findOne({ email: person.email });
@@ -106,7 +107,7 @@ app.post("/signup", async (req, res) => {
       lastName: person.lastName,
       email: person.email,
       password: person.password,
-    });
+    }); 
 
     await data.save();
     res.status(200).json("Signup successful");

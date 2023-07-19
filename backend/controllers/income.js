@@ -233,7 +233,7 @@ exports.generateBudget = async (req, res) => {
   // console.log(main);
 
   try {
-    if (!main) {
+    if (!main) { 
       return res.status(400).json("No data found");
     }
 

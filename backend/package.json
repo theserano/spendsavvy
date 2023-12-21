@@ -1,7 +1,7 @@
 {
-  "name": "backend",
+  "name": "spendsavvy backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "my backend for web budgeting platform",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"

@@ -119,7 +119,7 @@ app.post("/signup", async (req, res) => {
 
 // mongoose setup
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect(process.env.MONGO_URLL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

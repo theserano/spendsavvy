@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 const helmet = require("helmet");
 const cors = require("cors");
 const app = express();
-require("dotenv").config();
+// No need to load dotenv on Glitch, secrets are automatically available as environment variablescd
+// require("dotenv").config();
 const path = require("path");
 const user = require("./models/userModel");
 const bcrypt = require("bcrypt");
